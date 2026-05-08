@@ -4,27 +4,33 @@ import Users from "../../utils/dummy";
 
 
 const Home =()=>{
-    const userName = "Muhammad Yasin"
+//     const userName = "Muhammad Yasin"
 
-    const handleTest =()=>{
-        console.log(`Hello ${userName}`)
-    }
-    return (
-        <div>
-            <Header/>
-            <ul>
-                {
-                    Users.map((item, index)=>{
-                        return <li key={index}>{item?.name}</li>
+//     const handleTest =()=>{
+//         console.log(`Hello ${userName}`)
+//     }
+//     return (
+//         <div>
+//             <Header/>
+//             <ul>
+//                 {
+//                     Users.map((item, index)=>{
+//                         return <li key={index}>{item?.name}</li>
 
-                    })
-                }
-            </ul>
-            <h1>B18 First Component</h1>
-            <h2>Hello ${userName}</h2>
-            <h3>{5*5}</h3>
-            <button onClick={handleTest}>Click Me</button>
-        </div>
-    )
+//                     })
+//                 }
+//             </ul>
+//             <h1>B18 First Component</h1>
+//             <h2>Hello ${userName}</h2>
+//             <h3>{5*5}</h3>
+//             <button onClick={handleTest}>Click Me</button>
+//         </div>
+//     )
+// }
+return(
+<div>
+    <h1>Welcome To Home</h1>
+</div>
+)
 }
 export default Home;

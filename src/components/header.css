@@ -1,4 +1,39 @@
-h3 {
+h1 {
     font-family: 'Times New Roman', Times, serif;
     color: gray;
+    text-align: center;
+}
+#container {
+    height: 6vh;
+    width: auto;
+    background-color: lightgreen;
+}
+ul {
+   
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: auto;
+    
+   
+}
+li {
+    margin: 20px;
+    color: white;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-decoration: none;
+ 
+}
+li:hover {
+   
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+    transform: scale(1,1);
+    transition: 0.15s;
+
 }
