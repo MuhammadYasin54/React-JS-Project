@@ -1,9 +1,10 @@
 import React from "react";
+import Header from "../../header";
 
 const FeedBack =()=>{
     return(
         <div>
-               <h1>Welcome to FeedBack</h1>
+               <Header screenName="FeedBack"/>
         </div>
     )
 }

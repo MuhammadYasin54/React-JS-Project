@@ -1,28 +1,52 @@
-import React from "react";
-import { Link } from "react-router";
+import { Link } from 'react-router';
+import React, { useState } from 'react';
+import {
+  MDBContainer,
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBNavbarToggler,
+  MDBNavbarNav,
+  MDBNavbarItem,
+  MDBNavbarLink,
+  MDBCollapse
+} from 'mdb-react-ui-kit';
+import "./navbar.css"
+const NavBar=()=> {
+  const [openNav, setOpenNav] = useState(false);
 
-const NavBar = ()=>{
-    return (
-        <div id="container">
-        <ul>
-        <li>
-            <Link to={"/"}>Home</Link>
-        </li>
-        <li>
-            <Link to={"/about"}>About</Link>
-        </li>
-         <li>
-            <Link to={"/contact"}>Contact</Link>
-        </li>
-         <li>
-            <Link to={"/services"}>Services</Link>
-        </li>
-         <li>
-            <Link to={"/feedback"}>FeedBack</Link>
-        </li>
-    </ul>
-    </div>
-    )
-
+  return (
+    <MDBNavbar expand='lg' light bgColor='light'>
+      <MDBContainer fluid>
+        <MDBNavbarBrand href='#'>Navbar</MDBNavbarBrand>
+        <MDBNavbarToggler
+          type='button'
+          aria-expanded='false'
+          aria-label='Toggle navigation'
+          onClick={() => setOpenNav(!openNav)}
+        >
+          {/* <MDBIcon icon='bars' fas /> */}
+        </MDBNavbarToggler>
+        <MDBCollapse navbar open={openNav}>
+          <MDBNavbarNav>
+            <MDBNavbarItem>
+              <MDBNavbarLink>
+               <Link to={"/"} className='link'>Home</Link>
+              </MDBNavbarLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
+              <MDBNavbarLink> <Link to={"/contact"} className='link'>Contact</Link></MDBNavbarLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
+              <MDBNavbarLink> <Link to={"/services"} className='link'>Services</Link></MDBNavbarLink>
+            </MDBNavbarItem>
+              <MDBNavbarItem>
+              <MDBNavbarLink> <Link to={"/feedback"} className='link'>FeedBack</Link></MDBNavbarLink>
+            </MDBNavbarItem>
+            
+          </MDBNavbarNav>
+        </MDBCollapse>
+      </MDBContainer>
+    </MDBNavbar>
+  );
 }
 export default NavBar;

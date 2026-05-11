@@ -1,9 +1,10 @@
 import React from "react";
+import Header from "../../header";
 
 const Contact =()=>{
     return (
         <div>
-            <h1>Welcome to Contact</h1>
+           <Header screenName="Contact"/>
         </div>
     )
 }

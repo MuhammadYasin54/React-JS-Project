@@ -1,9 +1,10 @@
 import React from "react";
+import Header from "../../header";
 
 const Services =()=>{
     return(
         <div>
-            <h1>Welcome to Services</h1>
+          <Header screenName="Services"/>
         </div>
     )
 }

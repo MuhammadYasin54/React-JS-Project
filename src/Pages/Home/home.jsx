@@ -3,6 +3,7 @@ import Header from "../../header"
 import Users from "../../utils/dummy";
 
 
+
 const Home =()=>{
 //     const userName = "Muhammad Yasin"
 
@@ -29,6 +30,7 @@ const Home =()=>{
 // }
 return(
 <div>
+       <Header screenName="Home"/>
     <h1>Welcome To Home</h1>
 </div>
 )
