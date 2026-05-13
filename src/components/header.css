@@ -16,6 +16,8 @@ ul {
     flex-direction: row;
     justify-content: flex-end;
     margin: auto;
+
+;
     
    
 }
@@ -25,7 +27,7 @@ li {
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    text-decoration: none;
+
  
 }
 li:hover {

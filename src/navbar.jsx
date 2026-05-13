@@ -42,6 +42,9 @@ const NavBar=()=> {
               <MDBNavbarItem>
               <MDBNavbarLink> <Link to={"/feedback"} className='link'>FeedBack</Link></MDBNavbarLink>
             </MDBNavbarItem>
+            <MDBNavbarItem>
+              <MDBNavbarLink> <Link to={"/OtherData"} className='link'>Others</Link></MDBNavbarLink>
+            </MDBNavbarItem>
             
           </MDBNavbarNav>
         </MDBCollapse>
