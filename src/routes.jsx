@@ -7,6 +7,10 @@ import Services from "./Pages/Services/services";
 import Contact from "./Pages/contact/contact";
 import FeedBack from "./Pages/Feedback/feedback";
 import OtherData from "./Pages/others/others";
+import User from "./Pages/user/user";
+import CustomUser from "./userdata";
+import ApiData from "./ApiData";
+import UserData from "./apiuserdata";
 
 const AppRoutes =()=>{
 return(
@@ -17,6 +21,10 @@ return(
           <Route element={<Contact/>} path="/contact"/>
            <Route element={<FeedBack/>} path="/feedback"/>
             <Route element={<OtherData/>} path="/OtherData"/>
+             <Route element={<User/>} path="/User"/>
+              <Route element={<CustomUser/>} path="/User/:uid"/>
+              <Route element={<ApiData/>} path="/apiData"/>
+                <Route element={<UserData/>} path="/apidata/:uid"/>
     </Routes>
 )
 }

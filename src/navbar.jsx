@@ -45,6 +45,12 @@ const NavBar=()=> {
             <MDBNavbarItem>
               <MDBNavbarLink> <Link to={"/OtherData"} className='link'>Others</Link></MDBNavbarLink>
             </MDBNavbarItem>
+             <MDBNavbarItem>
+              <MDBNavbarLink> <Link to={"/user"} className='link'>user</Link></MDBNavbarLink>
+            </MDBNavbarItem>
+             <MDBNavbarItem>
+              <MDBNavbarLink> <Link to={"/ApiData"} className='link'>API Data</Link></MDBNavbarLink>
+            </MDBNavbarItem>
             
           </MDBNavbarNav>
         </MDBCollapse>
