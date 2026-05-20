@@ -16,9 +16,19 @@ ul {
     flex-direction: column;
     margin: auto;
 
-;
+
     
    
+}
+#container {
+    height: 20vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
 }
 li {
     
@@ -35,9 +45,9 @@ button {
 button:hover {
    margin: 10px;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 14px;
     color: black;
-    transform: scale(1,1);
-    transition: 0.15s;
+    transform: scale(1.02,1.02);
+    transition: 0.2s;
 
 }

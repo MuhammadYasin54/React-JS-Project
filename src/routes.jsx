@@ -12,6 +12,7 @@ import CustomUser from "./userdata";
 import ApiData from "./ApiData";
 import UserData from "./apiuserdata";
 import Todo from "./Pages/todo/todo";
+import TodoList from "./Pages/todo/todolist";
 
 const AppRoutes =()=>{
 return(
@@ -27,6 +28,8 @@ return(
               <Route element={<ApiData/>} path="/apiData"/>
                 <Route element={<UserData/>} path="/apidata/:uid"/>
                  <Route element={<Todo/>} path="/todo"/>
+                 <Route element={<TodoList/>} path="/todolist"/>
+
     </Routes>
 )
 }
